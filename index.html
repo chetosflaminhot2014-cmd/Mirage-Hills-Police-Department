@@ -131,10 +131,29 @@ footer{background:#050910}
 @media(max-width:600px){.nav{height:70px}.brand{font-size:.78rem}.hero-inner{padding-top:48px;padding-bottom:54px}.hero h1{font-size:clamp(2.75rem,12vw,4rem)}.scene{height:280px;margin-inline:0;transform:none}.cruiser{width:108%;right:-5%}.scene-label{font-size:.58rem}.section-head h2{font-size:2.25rem}section{padding:70px 0}.cta-panel{padding:30px 24px}.wrap[style*="position:relative;z-index:2"]{margin-top:0!important}.wrap[style*="position:relative;z-index:2"]>div{border-radius:0 0 10px 10px}}
 @media(prefers-reduced-motion:reduce){.btn,.card,.navlinks a:after{transition:none!important}.cruiser{animation:none!important}}
 
+
+/* Insignia policial MHPD */
+.badge-logo{
+  width:46px;height:50px;flex:0 0 46px;
+  display:flex;align-items:center;justify-content:center;
+  clip-path:polygon(8% 0,92% 0,100% 12%,94% 66%,50% 100%,6% 66%,0 12%);
+  border:0;border-radius:0;
+  background:linear-gradient(150deg,#dce8f4 0%,#7f9ab6 16%,#203f62 17%,#10243b 78%,#07111f 100%);
+  color:#f5f9ff;font-size:10px;font-weight:950;letter-spacing:.02em;
+  text-shadow:0 1px 3px #000;box-shadow:none;position:relative;
+  filter:drop-shadow(0 3px 5px #0008);
+}
+.badge-logo:after{
+  content:"";position:absolute;inset:3px;
+  clip-path:polygon(8% 0,92% 0,100% 12%,94% 66%,50% 100%,6% 66%,0 12%);
+  border:1px solid #d7e5f6;pointer-events:none;border-radius:0;
+}
+@media(max-width:480px){.badge-logo{width:42px;height:46px;flex-basis:42px;font-size:9px}}
+
 </style>
 </head>
 <body>
-<header><div class="wrap nav"><a class="brand" href="#inicio" aria-label="MHPD, inicio"><span class="badge-logo">MH</span><span>MIRAGE HILLS<br><span style="font-size:.68rem;color:#91a9c5;font-weight:600;letter-spacing:.16em">POLICE DEPARTMENT</span></span></a><nav class="navlinks" aria-label="Navegación"><a href="#experiencia">Experiencia</a><a href="#caracteristicas">Características</a><a href="#requisitos">Requisitos</a><a href="#novedades">Novedades</a></nav><span class="status">● En desarrollo</span></div></header>
+<header><div class="wrap nav"><a class="brand" href="#inicio" aria-label="MHPD, inicio"><span class="badge-logo" aria-label="Insignia MHPD">MHPD</span><span>MIRAGE HILLS<br><span style="font-size:.68rem;color:#91a9c5;font-weight:600;letter-spacing:.16em">POLICE DEPARTMENT</span></span></a><nav class="navlinks" aria-label="Navegación"><a href="#experiencia">Experiencia</a><a href="#caracteristicas">Características</a><a href="#requisitos">Requisitos</a><a href="#novedades">Novedades</a></nav><span class="status">● En desarrollo</span></div></header>
 <main>
 <section class="hero" id="inicio" style="padding:0"><div class="wrap hero-inner"><div><div class="eyebrow">Simulador policial · Proyecto independiente</div><h1>La ciudad te necesita.<span>Responde al llamado.</span></h1><p>Patrulla las calles, atiende incidentes y forma parte de la seguridad de Mirage Hills en un simulador policial inspirado en los departamentos de policía estadounidenses.</p><div class="actions"><a class="btn btn-primary" href="#novedades">Conocer el proyecto <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="#experiencia">Explorar características</a></div><p class="micro">En desarrollo activo. Las funciones y los requisitos pueden cambiar.</p></div>
 <div class="scene" aria-label="Ilustración conceptual de una patrulla frente al horizonte urbano"><div class="sun"></div><div class="scene-label">Mirage Hills · Patrol Division</div><div class="city"><div class="building" style="--h:75px"></div><div class="building" style="--h:112px"></div><div class="building" style="--h:88px"></div><div class="building" style="--h:143px"></div><div class="building" style="--h:103px"></div><div class="building" style="--h:127px"></div><div class="building" style="--h:82px"></div><div class="building" style="--h:115px"></div><div class="building" style="--h:65px"></div></div><div class="road"></div>
